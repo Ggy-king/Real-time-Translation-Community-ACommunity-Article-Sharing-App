@@ -1,7 +1,7 @@
 <template>
     <footer>
         <ul>
-            <li ref="def"><router-link to="/forum">社区</router-link></li>
+            <li><router-link to="/forum">社区</router-link></li>
             <li><router-link to="/publish">发布</router-link></li>
             <li><router-link to="/like">喜欢</router-link></li>
             <li><router-link to="/person">我的</router-link></li>
@@ -12,9 +12,7 @@
 <script>
 export default {
     name: 'AppFooter',
-    created() {
-        if (this.$router.currentRoute.name === 'forum' || this.$router.currentRoute.name === null) this.$refs.def.classList.add('.def')
-    }
+
 }
 </script>
 
