@@ -4,7 +4,7 @@
         <ul>
             <li v-for="(item) in forum" :key="item.id" ref="forumE" @click="handleToShow(item.id)" >
                 <div class="forum-head">
-                    <img :src="imgRandom(1, 9)" :alt="item.name" :ref="'img' + item.id">
+                    <img :src="imgRandom(0, 8)" :alt="item.name" :ref="'img' + item.id">
                     <div>
                         <div class="forum-title">{{ item.title }}</div>
                         <span class="forum-tn">{{ item.name }} | 2024-10-31</span>
