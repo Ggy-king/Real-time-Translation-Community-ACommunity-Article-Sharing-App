@@ -23,7 +23,7 @@ const router = new VueRouter({
         { name: 'not', path: '*', component: NotFound },
 
     ],
-    mode: 'history',
+    mode: 'hash',
     linkActiveClass: 'link-active'
 })
 
